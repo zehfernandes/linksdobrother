@@ -1,0 +1,106 @@
+/* ============================== */
+/* ! Typography  */
+/* ============================== */
+
+@font-face {
+  font-family: 'Essays 1743';
+  src: url('../fontes/essays1743-webfont.eot');
+  src: local('Essays 1743'), url('../fontes/essays1743-webfont.woff') format('woff'), url('../fontes/essays1743-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ============================== */
+/* ! Layout for desktop version   */
+/* ============================== */
+	
+	html, body { height: 100%; color: #242424; } 
+	
+	.wrap { min-height: 100%; height: auto !important; height: 100%; margin: 0 10px -70px 10px;  }
+	body { font: 16px Georgia, Garamond; background: url(../images/bg-body.jpg); color: #242424; }
+	
+	header h1 { text-align: center; padding-top: 30px;  }
+	header p { font: bold italic 16px Georgia; text-align: center; margin-left: -10px; line-height: 22px;}
+	
+	article { margin-top: 40px;  } 
+	.secao { padding: 20px 0 25px 0; background: url(../images/bg-borda.png) repeat-x; }
+	.secao h2 { text-align: right; font-family: 'Essays 1743'; font-size: 18px; text-transform: uppercase; line-height: 28px; padding-top: 3px; font-weight: bold; }
+	
+	.listalinks { -webkit-column-count:3; -webkit-column-gap: 40px; -moz-column-count:3; -moz-column-gap: 40px; column-count:3; column-gap: 40px; list-style: none;  }
+	.listalinks li { border-bottom: 1px solid #3a3a3a; padding: 8px; background: url(../images/icon-hand.png) no-repeat right -92px; cursor: pointer;   }
+		.listalinks li:hover { background-position: right 11px; }
+	
+	.listalinks li a { font-size: 14px; display: block; color: #242424; text-decoration: none; }
+		.listalinks li:hover a { color:#621919; }
+		
+	/*.listalinks li:nth-child(4n-1) { border-top: 1px solid #3a3a3a; } */
+	
+	footer, .push {  padding: 13px; margin-top: 30px; }
+	footer { background: #242424; text-align: center; font-style: italic; color: #fff; font-size: 12px;}
+	footer a { color:#fff; text-decoration: underline;  }
+	footer a:hover { text-decoration: none;  }
+	
+	
+/* ============================== */
+/* ! Layout for desktop version    960 */
+/* ============================== */
+@media screen and (max-width: 960px) { 
+
+	.listalinks { -webkit-column-count:2; -moz-column-count:2; column-count:2; }
+	
+	article { margin-top: 30px;}
+	header h1 img { width: 300px; height: 101px; }
+	header p { font-size: 14px; line-height: 18px; }
+	
+}
+
+
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 767px) {
+
+	
+	header h1 { padding-top: 10px}
+	header h1 img { width: 250px; height: 84px; }
+	
+	article { margin-top: 20px;}
+	.listalinks { -webkit-column-count:1; -moz-column-count:1; column-count:1;  list-style: none; }
+
+	.secao h2 { text-align: center; background: #242424; color: #fff; }
+
+
+}
+
+@media handheld, only screen and (max-width: 420px) {
+	
+	.listalinks li { background: none !important; }
+
+}
+
+
+/* ========================================== */
+/* ! Log version  */
+/* ========================================== */
+
+.log h1 { text-align: left; font-family: 'Essays 1743'; text-transform: uppercase; font-weight: bold; line-height: 30px; padding-top: 20px; }
+.log article { margin-top: 40px; }
+.log h3, .log ul { padding-left: 20px; }
+.log ul { margin: 16px 0 20px 40px; list-style: circle; }
+.log ul li { font-size: 14px; margin: 8px 0;  }
+.log li a { color: #621919; text-decoration: none; }
+	.log li a:hover { text-decoration: underline; }
+
+/* ========================================== */
+/* ! Provide higher res assets for iPhone 4   */
+/* ========================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+
+/*	.logo {
+		background: url(logo2x.jpg) no-repeat;
+		background-size: 212px 303px;
+	}*/
+
+}
